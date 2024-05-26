@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	tools:context=".SettingsFragment">
+
+	<!-- TODO: Update blank fragment layout -->
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:orientation="vertical">
+
+		<TextView
+			android:id="@+id/textView"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:text="Informasi Profil:"
+			android:textSize="20sp" />
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="200dp"
+			android:layout_marginStart="8dp"
+			android:layout_marginTop="25dp"
+			android:layout_marginEnd="8dp"
+			android:layout_marginBottom="25dp"
+			android:gravity="center_horizontal|center_vertical"
+			android:orientation="horizontal">
+
+			<ImageView
+				android:id="@+id/profilePicture"
+				android:layout_width="200dp"
+				android:layout_height="200dp"
+				app:srcCompat="@drawable/ic_menu_camera" />
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="50dp"
+			android:layout_marginStart="8dp"
+			android:layout_marginEnd="8dp"
+			android:layout_marginBottom="8dp"
+			android:orientation="horizontal">
+
+			<TextView
+				android:layout_width="100dp"
+				android:layout_height="wrap_content"
+				android:text="Nama:"
+				android:textSize="20sp" />
+
+			<EditText
+				android:id="@+id/profileName"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:ems="10"
+				android:hint="Nama yang tampil di profil"
+				android:importantForAutofill="no"
+				android:inputType="text"
+				android:lines="1" />
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="50dp"
+			android:layout_marginStart="8dp"
+			android:layout_marginTop="8dp"
+			android:layout_marginEnd="8dp"
+			android:orientation="horizontal">
+
+			<TextView
+				android:layout_width="100dp"
+				android:layout_height="wrap_content"
+				android:text="NIM:"
+				android:textSize="20sp" />
+
+			<EditText
+				android:id="@+id/profileNim"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:ems="10"
+				android:hint="NIM yang tampil di profil"
+				android:importantForAutofill="no"
+				android:inputType="text"
+				android:lines="1" />
+		</LinearLayout>
+
+		<Button
+			android:id="@+id/button"
+			android:layout_width="320dp"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center_horizontal"
+			android:layout_marginStart="16dp"
+			android:layout_marginTop="30dp"
+			android:layout_marginEnd="16dp"
+			android:text="Simpan Data" />
+	</LinearLayout>
+
+</FrameLayout>
